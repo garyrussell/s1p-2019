@@ -36,6 +36,12 @@ CREATE USER 'maxwell'@'localhost' IDENTIFIED WITH 'mysql_native_password' AS 'ma
 
 ==== Running
 
+Run maxwell
+
+```
+$ maxwell --user maxwell --password maxwell --producer=kafka --kafka.bootstrap.servers=localhost:9092 --kafka_topic=maxwell
+```
+
 Run all three boot applications and post a few currency updates:
 
 ```
