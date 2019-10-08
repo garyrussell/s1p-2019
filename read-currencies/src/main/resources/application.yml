@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      value-deserializer: org.apache.kafka.common.serialization.DoubleDeserializer
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.DoubleSerializer
+      properties:
+        delivery.timeout.ms: 123456
